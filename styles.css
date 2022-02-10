@@ -1,0 +1,140 @@
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background: var(--background);
+    font-family: Poppins;
+
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--title);
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--title);
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 126px;
+}
+
+.logo img {
+    width: 87px;
+}
+
+.find-film {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.find-film button {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    gap: 17px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    max-width: 180px;
+    cursor: pointer;
+
+    background-color: var(--bg-button);
+}
+
+.find-film button:hover {
+    filter: brightness(.8);
+}
+
+.find-film button img {
+    width: 35px;
+}
+
+.find-film p {
+    max-width: 450px;
+    color: var(--title);
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-top: 26px;
+}
+
+article {
+    display: none;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.film-img img {
+    width: 171px;
+}
+
+.film-content {
+    margin-left: 34px;
+}
+
+.film-content p {
+    max-width: 423px;
+    color: var(--title);
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.no-film {
+    max-width: 423px;
+    color: var(--title);
+    
+    font-weight: 300;
+    
+}
+
+@media (max-width: 660px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .film-content {
+        text-align: center;
+        margin: 30px 0 30px 0;
+    }
+
+}
